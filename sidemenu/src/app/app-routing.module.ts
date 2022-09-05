@@ -36,6 +36,26 @@ const routes: Routes = [
   {
     path: 'nuevo-grupo',
     loadChildren: () => import('./nuevo-grupo/nuevo-grupo.module').then( m => m.NuevoGrupoPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
+    path: 'llamadas',
+    loadChildren: () => import('./llamadas/llamadas.module').then( m => m.LlamadasPageModule)
+  },
+  {
+    path: 'personacerca',
+    loadChildren: () => import('./personacerca/personacerca.module').then( m => m.PersonacercaPageModule)
+  },
+  {
+    path: 'mensajes-guardados',
+    loadChildren: () => import('./mensajes-guardados/mensajes-guardados.module').then( m => m.MensajesGuardadosPageModule)
+  },
+  {
+    path: 'ajustes',
+    loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
   }
 ];
 

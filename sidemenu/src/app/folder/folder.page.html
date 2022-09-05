@@ -6,9 +6,9 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title> Telegram </ion-title>
+    <ion-searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
 
 <!--ESTE ES PARA IOS -->
 <ion-content [fullscreen]="true">
@@ -18,11 +18,15 @@
     </ion-toolbar>
   </ion-header>
 <hr>
+
+<!--ESTE ES PARA EL BOTON DEL LAPIZ DEL EXTREMO INFERIOR IZQUIERDO-->
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button>
     <ion-icon name="pencil"></ion-icon>
   </ion-fab-button>
 </ion-fab>
+
+
 
   <!--LISTA DE CHATS-->
   <ion-list>
