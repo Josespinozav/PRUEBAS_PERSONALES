@@ -56,6 +56,14 @@ const routes: Routes = [
   {
     path: 'ajustes',
     loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'invitar-amigos',
+    loadChildren: () => import('./invitar-amigos/invitar-amigos.module').then( m => m.InvitarAmigosPageModule)
+  },
+  {
+    path: 'aprende-sobre-telegram',
+    loadChildren: () => import('./aprende-sobre-telegram/aprende-sobre-telegram.module').then( m => m.AprendeSobreTelegramPageModule)
   }
 ];
 
