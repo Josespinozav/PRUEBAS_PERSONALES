@@ -1,9 +1,55 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>NuevoGrupo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="folder/:id"></ion-back-button>
+      <ion-title>Nuevo Grupo</ion-title>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 <ion-content>
+
+  <!--LISTA DE CHATS-->
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+      <ion-img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Pokemon_Yellow.png"> </ion-img>
+    </ion-avatar>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+<hr>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mega_Man_X_%28videogame%29_logo.webp/1200px-Mega_Man_X_%28videogame%29_logo.webp.png"> </ion-img>
+      </ion-avatar>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+<hr>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="https://images-na.ssl-images-amazon.com/images/I/A15-31Y3bRL.jpg"> </ion-img>
+      </ion-avatar>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+<hr>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="https://www.pngmart.com/files/19/Ms-Pacman-PNG-Free-Download.png"> </ion-img>
+      </ion-avatar>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+<hr>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="https://i.blogs.es/748af7/super-mario-world/1366_2000.jpg"> </ion-img>
+      </ion-avatar>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

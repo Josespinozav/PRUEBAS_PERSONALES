@@ -5,31 +5,6 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'NuevoGrupo',
-    redirectTo: 'NuevoGrupoPageRouting',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    redirectTo: 'folder/Contacto',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    redirectTo: 'folder/Llamadas',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    redirectTo: 'folder/Personacerca',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    redirectTo: 'folder/Mensajesguardados',
-    pathMatch: 'full'
-  },
-  {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
