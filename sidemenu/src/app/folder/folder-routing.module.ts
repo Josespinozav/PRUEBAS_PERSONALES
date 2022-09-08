@@ -9,7 +9,6 @@ const routes: Routes = [
     component: FolderPage
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
