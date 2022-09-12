@@ -1,12 +1,61 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class="ion-no-border" mode="" [translucent]="true">
+  <ion-toolbar class="ion-padding">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="folder/:id"></ion-back-button>
-      <ion-title>Llamadas</ion-title>
+      <ion-back-button defaultHref="folder/:id" slot="start"></ion-back-button>
     </ion-buttons>
+    <ion-title slot="start">Llamadas</ion-title>
+    <ion-icon name="ellipsis-vertical-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="chat-list" >
+    <div class="recent-chats ion-padding">
+      <div class="chats">
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/320" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Reina Isabel II</h2>
+            <p>(2) 2 ene a las 12:17</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/323" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Chuck Norris</h2>
+            <p>(2) 26 nov a las 23:17</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/321" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>El Bananero</h2>
+            <p>(1) 1 sep a las 14:17</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
+
