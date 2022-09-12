@@ -3,9 +3,17 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>JA</ion-list-header>
-          <ion-note>Usuario</ion-note><br>
-          <ion-note>+5698887611</ion-note>
+
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/329" alt="">
+          </ion-avatar>
+          <br>
+          <ion-item lines="none" routerLink="">
+            <ion-label class="ion-text-nowrap">
+              <h2>JC</h2>
+              <p>+56999998888</p>
+            </ion-label>
+          </ion-item>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
