@@ -10,54 +10,27 @@
 </ion-header>
 
 <ion-content>
-  <div class="tabs ion-padding">
+  <!--<div class="tabs ion-padding">
     <ion-segment value="chats" (ionchange)="segmentChange($event)">
       <ion-segment-button value="chats">
         <ion-label> Chats</ion-label>
       </ion-segment-button>
     </ion-segment>
-  </div>
+  </div>-->
 
   <div class="chat-list" *ngIf="activeTab === 'chats'">
     <div class="recent-chats ion-padding">
       <div class="heading">
         <h1>Chats Recientes</h1>
-        <ion-icon name="search-sharp"></ion-icon>
       </div>
       <div class="chats">
-        <ion-item lines="none" routerLink="">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/320" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Reina Isabel II</h2>
-            <p>Escribiendo...</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge></ion-badge>
-            <p>2:13</p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/323" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Chuck Norris</h2>
-            <p>Traeme mi metralleta</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>10</ion-badge>
-            <p>4:24</p>
-          </div>
-        </ion-item>
         <ion-item lines="none" routerLink="">
           <ion-avatar slot="start">
             <img src="https://i.pravatar.cc/321" alt="">
           </ion-avatar>
           <ion-label class="ion-text-nowrap">
             <h2>El Bananero</h2>
-            <p>Sapbeeeeeeeeeeeee</p>
+            <p>Escribiendo...</p>
           </ion-label>
           <div class="info-div">
             <ion-badge>1</ion-badge>
@@ -101,32 +74,6 @@
           <div class="info-div">
             <ion-badge>1</ion-badge>
             <p>13:10</p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/328" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Maria Paz</h2>
-            <p>Escribiendo...</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>1</ion-badge>
-            <p>02:10</p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/326" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Jairo Duoc</h2>
-            <p>has el trabajo mierda</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>1</ion-badge>
-            <p>22:10</p>
           </div>
         </ion-item>
       </div>
