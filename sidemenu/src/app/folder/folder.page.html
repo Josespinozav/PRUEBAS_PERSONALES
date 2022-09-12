@@ -1,69 +1,140 @@
 
-<!--ESTE ES PARA ANDRIOD-->
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="ion-no-border" mode="" [translucent]="true">
+  <ion-toolbar class="ion-padding">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title> Telegram </ion-title>
-    <ion-searchbar animated=""></ion-searchbar>
+    <ion-title slot="start">Telegram</ion-title>
+    <ion-icon name="search-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<!--ESTE ES PARA IOS -->
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Telegram</ion-title>
-    </ion-toolbar>
-  </ion-header>
-<hr>
+<ion-content>
+  <div class="tabs ion-padding">
+    <ion-segment value="chats" (ionchange)="segmentChange($event)">
+      <ion-segment-button value="chats">
+        <ion-label> Chats</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 
-<!--ESTE ES PARA EL BOTON DEL LAPIZ DEL EXTREMO INFERIOR IZQUIERDO-->
-<ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button>
-    <ion-icon name="pencil"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
-
-
-
-  <!--LISTA DE CHATS-->
-  <ion-list>
-    <ion-item>
-      <ion-avatar>
-      <ion-img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Pokemon_Yellow.png"> </ion-img>
-    </ion-avatar>
-      <ion-label>Pokémon Yellow</ion-label>
-    </ion-item>
-<hr>
-    <ion-item>
-      <ion-avatar>
-        <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mega_Man_X_%28videogame%29_logo.webp/1200px-Mega_Man_X_%28videogame%29_logo.webp.png"> </ion-img>
-      </ion-avatar>
-      <ion-label>Mega Man X</ion-label>
-    </ion-item>
-<hr>
-    <ion-item>
-      <ion-avatar>
-        <ion-img src="https://images-na.ssl-images-amazon.com/images/I/A15-31Y3bRL.jpg"> </ion-img>
-      </ion-avatar>
-      <ion-label>The Legend of Zelda</ion-label>
-    </ion-item>
-<hr>
-    <ion-item>
-      <ion-avatar>
-        <ion-img src="https://www.pngmart.com/files/19/Ms-Pacman-PNG-Free-Download.png"> </ion-img>
-      </ion-avatar>
-      <ion-label>Pac-Man</ion-label>
-    </ion-item>
-<hr>
-    <ion-item>
-      <ion-avatar>
-        <ion-img src="https://i.blogs.es/748af7/super-mario-world/1366_2000.jpg"> </ion-img>
-      </ion-avatar>
-      <ion-label>Super Mario World</ion-label>
-    </ion-item>
-  </ion-list>
-
+  <div class="chat-list" *ngIf="activeTab === 'chats'">
+    <div class="recent-chats ion-padding">
+      <div class="heading">
+        <h1>Chats Recientes</h1>
+        <ion-icon name="search-sharp"></ion-icon>
+      </div>
+      <div class="chats">
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/320" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Reina Isabel II</h2>
+            <p>Escribiendo...</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge></ion-badge>
+            <p>2:13</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/323" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Chuck Norris</h2>
+            <p>Traeme mi metralleta</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>10</ion-badge>
+            <p>4:24</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/321" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>El Bananero</h2>
+            <p>Sapbeeeeeeeeeeeee</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>12:10</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/324" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Papa</h2>
+            <p>nos vemos</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>17:22</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/327" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Profe</h2>
+            <p>te sacaste un 1</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>12:10</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/329" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Julio Contesse Duoc</h2>
+            <p>hola</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>13:10</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/328" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Maria Paz</h2>
+            <p>Escribiendo...</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>02:10</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="">
+          <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/326" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Jairo Duoc</h2>
+            <p>has el trabajo mierda</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>22:10</p>
+          </div>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="pencil"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

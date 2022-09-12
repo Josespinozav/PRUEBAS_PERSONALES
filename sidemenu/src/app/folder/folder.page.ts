@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -6,13 +7,11 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './folder.page.html',
   styleUrls: ['./folder.page.scss'],
 })
-export class FolderPage implements OnInit {
-  public folder: string;
-
+export class FolderPage  {
+  activeTab = 'chats';
   constructor(private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  segmentChange(e){
+    this.activeTab=e.target.value;
   }
-
 }
