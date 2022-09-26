@@ -44,7 +44,11 @@ const routes: Routes = [
   {
     path: 'aprende-sobre-telegram',
     loadChildren: () => import('./aprende-sobre-telegram/aprende-sobre-telegram.module').then( m => m.AprendeSobreTelegramPageModule)
+  },  {
+    path: 'chats',
+    loadChildren: () => import('./chats/chats.module').then( m => m.ChatsPageModule)
   }
+
 ];
 
 @NgModule({
