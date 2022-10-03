@@ -59,7 +59,8 @@ ion-content{
     height: 90vh;
     .chat-section{
       height: calc(100% - 90px);
-      overflow: scroll;
+      overflow: auto;
+
 
 
         .chat{
