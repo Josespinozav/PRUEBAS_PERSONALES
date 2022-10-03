@@ -1,6 +1,6 @@
 ion-toolbar{
   ion-avatar{
-    width: 100% !important;
+    width: 50% !important;
     height: 100% !important;
   }
   --background: #7c7899;
@@ -11,7 +11,7 @@ ion-toolbar{
     letter-spacing: 1px;
     height: 10vh;
     ion-icon{
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #fff;
       margin-left: 5px;
     }
@@ -22,7 +22,7 @@ ion-toolbar{
       ion-avatar{
             max-width: 51px;
             max-height: 51px;
-            margin-left: 8px;
+            margin-left: 0px;
       }
       .details{
         margin-left: 15px;
@@ -60,12 +60,12 @@ ion-content{
     .chat-section{
       height: calc(100% - 90px);
       overflow: scroll;
-      
+
 
         .chat{
            display: flex;
            flex-direction: column;
-      
+
           .messages{
              display: flex;
              flex-direction: column;
@@ -97,7 +97,7 @@ ion-content{
               left: -7px;
               height: 20px;
               width: 20px;
-              
+
             }
             &:after{
               content: "";
@@ -107,7 +107,7 @@ ion-content{
               left: -10px;
               width: 10px;
               height: 20px;
-             
+
             }
           }
           .last-message-other{
@@ -151,7 +151,7 @@ ion-content{
               height: 20px;
               width: 20px;
               background-attachment: fixed;
-              
+
             }
             &:after{
               content: "";
