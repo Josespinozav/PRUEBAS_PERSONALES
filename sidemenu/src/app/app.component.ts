@@ -1,12 +1,15 @@
-import { InvitarAmigosPage } from './invitar-amigos/invitar-amigos.page';
+//import { InvitarAmigosPage } from './invitar-amigos/invitar-amigos.page';
 import { Component } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { Storage } from '@ionic/storage-angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+ 
+  
   public appPages = [
     { title: 'Nuevo grupo', url: 'nuevo-grupo', icon:'people'},
     { title: 'Contacto', url: 'contacto', icon: 'person' },
@@ -20,8 +23,11 @@ export class AppComponent {
     { title: 'Aprende sobre Telegram', url: 'aprende-sobre-telegram', icon: 'help-circle' },
   ];
 
-  constructor(private api: HttpClient) {
+  constructor(private api: HttpClient,private db: Storage) {
     this.api.get('');
-
   }
+    async ngOnInit(){
+      await this.db.create();
+    }
+  
 }
