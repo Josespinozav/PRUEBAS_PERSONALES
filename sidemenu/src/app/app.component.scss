@@ -2,6 +2,26 @@ ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
+ion-accordion-group{
+  ion-avatar{
+    width: 15% !important;
+    height: 15% !important;
+  }
+  .details{
+    margin-left: 50px;
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    h1{
+      margin: 0;
+      color: #fff;
+      margin-left: 0px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
+
 ion-menu.md ion-content {
   --padding-start: 8px;
   --padding-end: 8px;

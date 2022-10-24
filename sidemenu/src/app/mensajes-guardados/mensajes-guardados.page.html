@@ -1,15 +1,41 @@
-<ion-header>
+
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="folder/:id"></ion-back-button>
-      <ion-title>Mensajes guardado</ion-title>
-    </ion-buttons>
+    <div class="header ion-padding">
+      <div class="info">
+        <ion-back-button name="chevron-back-outline" defaultHref="folder/:id"></ion-back-button>
+        <ion-icon name="bookmark"></ion-icon>
+        <span class="details">
+          <h1>Mensajes guardados</h1>
+        </span>
+      </div>
+      <div class="calling">
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </div>
+    </div>
   </ion-toolbar>
-</ion-header>
 
 <ion-content>
-
-
-  
-
+  <div class="conversation ion-padding">
+    <div class="chat-section" id="chat">
+      <div class="chat">
+        <div class="mine messages">
+          <div class="message">
+            BIEN GRACIA!
+          </div>
+          <div class="message last">
+            como tai tu ?
+          </div>
+          <span>
+            <ion-icon name="checkmark-done-outline"></ion-icon>1:44 PM
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="message-input">
+      <ion-input placeholder="Escriba su mensaje..."></ion-input>
+      <div class="send-button">
+        <ion-icon name="send-sharp"></ion-icon>
+      </div>
+    </div>
+  </div>
 </ion-content>

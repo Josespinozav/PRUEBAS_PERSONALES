@@ -7,13 +7,26 @@
           <ion-avatar slot="start">
             <img src="https://i.pravatar.cc/329" alt="">
           </ion-avatar>
-          <br>
-          <ion-item lines="none" routerLink="">
-            <ion-label class="ion-text-nowrap">
-              <h2>JC</h2>
-              <p>+56999998888</p>
-            </ion-label>
-          </ion-item>
+          
+          <ion-accordion-group>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label class="ion-text-nowrap">
+                  <h2>JC</h2>
+                  <p>+56999998888</p>
+                </ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-avatar id ="avatar2">
+                  <img src="https://i.pravatar.cc/321" alt="">
+                </ion-avatar>
+                <span class="details" slot="">
+                  <h1>Bananero</h1>
+                </span>
+              </div>
+            </ion-accordion>
+          </ion-accordion-group>
+
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
@@ -23,7 +36,6 @@
           </ion-menu-toggle>
         </ion-list>
         <ion-list id="labels-list">
-          <p>_________________________</p>
           <ion-list id="inbox-list">
 
             <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages1; let i = index">

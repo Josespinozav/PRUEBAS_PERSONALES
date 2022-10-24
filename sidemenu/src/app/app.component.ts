@@ -8,6 +8,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Perfil', url: 'perfil', icon:'person-circle'},
     { title: 'Nuevo grupo', url: 'nuevo-grupo', icon:'people'},
     { title: 'Contacto', url: 'contacto', icon: 'person' },
     { title: 'Llamadas', url: 'llamadas', icon: 'call' },

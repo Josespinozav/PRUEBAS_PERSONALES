@@ -35,7 +35,7 @@ const routes: Routes = [
   },
   {
     path: 'ajustes',
-    loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
     path: 'invitar-amigos',
@@ -44,9 +44,14 @@ const routes: Routes = [
   {
     path: 'aprende-sobre-telegram',
     loadChildren: () => import('./aprende-sobre-telegram/aprende-sobre-telegram.module').then( m => m.AprendeSobreTelegramPageModule)
-  },  {
+  },
+  {
     path: 'chats',
     loadChildren: () => import('./chats/chats.module').then( m => m.ChatsPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   }
 
 ];
