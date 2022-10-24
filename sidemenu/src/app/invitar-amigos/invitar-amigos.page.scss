@@ -1,8 +1,17 @@
+ion-toolbar{
+  --background: #7c7899;
+  font-family: "Satisfy",cursive !important;
+  letter-spacing: 2px;
+  font-size: 2rem !important;
+  color: #fff;
+  ion-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    font-size: 1.6rem !important;
+  }
+}
 .chat-list{
-  background: rgb(0, 0, 0);
   margin-top: 5px;
-  border-top-right-radius: 38px;
-  border-top-left-radius: 38px;
 
   .all-chats{
     padding-top: 0;
@@ -37,7 +46,7 @@
         h2{
           font-size: 1rem;
           font-weight: bolder;
-          color: #fff;
+          color: rgb(17, 15, 15);
         }
         p{
           margin-top: 6px;

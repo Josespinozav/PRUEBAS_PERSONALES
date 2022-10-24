@@ -1,6 +1,6 @@
 ion-header{
   ion-toolbar{
-    --backgroun: #7c7899;
+    --background: #7c7899;
     font-family: "Satisfy",cursive !important;
     letter-spacing: 2px;
     font-size: 2rem !important;
@@ -28,17 +28,16 @@ ion-content{
         --padding-top: 3px !important;
         --background-check:#feacac;
         --indicator-color: transparent !important;
-        --color:#d1d1d1;
+        --color:#0f0e0e;
         --color-checked:#fff;
         font-weight: bold;
         border-radius: 22px;
       }
-
     }
   }
   .chat-list{
-    background: rgb(0, 0, 0);
-    margin-top: 5px;
+    
+    margin-top: 0px;
     
     
 
@@ -52,11 +51,11 @@ ion-content{
       h1{
         font-size: 1.2rem;
         font-weight: bolder;
-        color: #fefefe;
+        color: #494949;
       }
       ion-icon{
         font-size: 1.5rem;
-        color: #ffffff;
+        color: #4d4c4c;
       }
     }
     .chats{
@@ -75,7 +74,7 @@ ion-content{
           h2{
             font-size: 1rem;
             font-weight: bolder;
-            color: #fff;
+            color: rgb(75, 72, 72);
           }
           p{
             margin-top: 6px;
